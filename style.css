@@ -3,7 +3,16 @@ body{
     text-align: center;
 }
 
-.notes{
-   border-collapse: collapse;
-   border: 2px; 
+.notes, th, td{
+   border: 2px solid black; 
+   margin: 0 auto;
+   width: 50%;
+
+}
+th{
+    background-color: brown;
+    height: 50px;
+}
+td{
+    height: 30px;
 }
