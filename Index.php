@@ -64,13 +64,29 @@ $_prenoms[2] = "Laura";
 
 <?php
 
-$etudiants = array ("Oceane"=>"11/20","Karim"=>"14/20","Jimmy"=>"13/20","Outman"=>"14/20","Fred"=>"15/20"
+$etudiants = array("Oceane"=>"11/20","Karim"=>"14/20","Jimmy"=>"13/20","Outman"=>"14/20","Fred"=>"15/20"
   );
+  echo"<pre>";
   ksort($etudiants);
 
+  echo <<<html
+
+  <table class="notes">
+  <thead>
+    <tr>
+    <th scope="col">Prenom</th>
+    <th scope="col">Note</th>
+
+  html;
+
+  
   foreach($etudiants as $x => $x_value) {
-    echo "Prenom: " . $x . " . Moyenne: " . $x_value;
-    echo "<br>";
+    echo <<<html
+    <tr>
+    
+       <td>{$x}</td>
+       <td>{$x_value}</td>
+    html;
   }
   
 ?>
