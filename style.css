@@ -1,0 +1,9 @@
+body{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.notes{
+   border-collapse: collapse;
+   border: 2px; 
+}
