@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -90,8 +90,30 @@ $etudiants = array("Oceane"=>"11/20","Karim"=>"14/20","Jimmy"=>"13/20","Outman"=
     html;
   }
   
+  
 ?>
 
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+?>
+
+<?php 
+function table($nbr, $nbr2)
+{
+    $table = '<table border="1">';
+    for ($a=1; $a <= 5; $a++) {
+        $table .= '<tr>';
+        for ($b=1; $b <= 5 ; $b++) {
+            $table .= '<td>'.$a*$b.'</td>';
+        }
+        $table .= '</tr>';
+    }
+    $table .= '</table>';
+    return $table;
+}
+ 
+echo table(5, 5);
+?>
 
 
 </body>
