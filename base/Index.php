@@ -115,6 +115,105 @@ function table($nbr, $nbr2)
 echo table(5, 5);
 ?>
 
+<?php
+
+
+
+
+
+class voiture{
+
+
+
+
+
+    public $codevin;
+
+
+    public $marque;
+
+    
+    public $modèle;
+
+
+    public $couleur;
+
+
+    public $immatriculation;
+
+
+
+
+
+    public function afficher() {
+
+
+
+
+
+        echo <<<html
+
+         <p> Le code vin de la voiture est: {$this->codevin},
+         c'est une {$this->marque} {$this->modèle} de couleur {$this->couleur}
+         et immatriculée: {$this->immatriculation}"
+
+        html;
+
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+echo "Bonjour";
+
+
+
+echo "<pre>";
+
+
+
+$v = new voiture();
+
+
+
+$v->codevin = "12345";
+
+
+
+$v->marque = "Volkswagen";
+
+
+$v->modèle = "Golf 7 GTD";
+
+
+
+$v->couleur = "Grey-Limestone";
+
+
+
+$v->immatriculation = "AA-229-AA";
+
+
+
+var_dump($v);
+
+
+
+$v->afficher();
+
+
+
+
+
+?>
 
 </body>
 </html>
